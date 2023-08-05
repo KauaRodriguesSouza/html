@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(30, 30, 58);
+            margin: 0px;
+
+        }
+        header{
+            background-color: rgb(33, 40, 102);
+            padding: 10px;
+            margin: 0%;
+
+        }
+        nav{
+            background-color: rgb(9, 20, 54);
+            padding: 3px;
+            box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.377);
+            
+
+
+        }
+        nav > a{
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+
+        }
+            main{
+                background-color: rgb(33, 40, 102);
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10px 0px;
+                box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.548);
+            }
+            article{
+                background-color: rgb(3, 27, 248);
+            }
+            article > aside{
+                background-color: rgb(33, 40, 102);
+            }
+            footer{
+                background-color: rgb(33, 40, 102);
+                color: rgb(0, 0, 0);
+                text-align: center;
+                font-weight: bolder;
+                padding: 4px;;
+            }
+            footer > P{
+                margin: 0px;
+            }
+            #bola{
+                height: 100px;
+                width: 100px;
+                margin: 10px;
+                background-color: white;
+                border-radius: 50%;
+            }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Neipeixe</h1>
+     <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+     </nav>
+    </header>
+
+    <main>
+        <section id="aassuntos">
+            <h1>esporte,politica,economia</h1>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <aside>
+                    <h2>noticias do brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vero dignissimos fugiat omnis optio deserunt voluptate dolorum, inventore impedit molestiae tempora perspiciatis consequuntur pariatur esse commodi numquam, exercitationem iusto necessitatibus.</p>
+                <p>artigo escrito por kauã</p>
+               </aside>
+            </article>
+        </section>
+    </main>
+  
+    <footer>
+     <p>desenvolovido por kakasites</p>  
+    </footer>
+    
+    <div id="bola"></div>
+</body>
+</html>

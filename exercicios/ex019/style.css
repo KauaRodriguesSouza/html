@@ -1,0 +1,33 @@
+@charste "UTF-8";
+
+    body{
+        background-color: rgb(54, 128, 128);
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+    h1#principal{
+        text-align: center;
+        background-color: aquamarine;
+        color:rgb(37, 37, 99);
+    }
+    h1{
+        color:rgb(255, 255, 255);
+        background-color: black;
+        text-align: left;
+    }
+   
+    h2{
+        color: rgb(4, 34, 34);
+    }
+    .basico{
+        color: chartreuse;
+        font-weight: bolder;
+    }
+    .intermediario{
+        color: goldenrod;
+    }
+    .avancado{
+        color: red;
+    }
+    .destaque{
+        background-color: darkblue;
+    }
