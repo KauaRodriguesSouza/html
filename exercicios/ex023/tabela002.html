@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabela grandes</title>
     <style>
+
         body{
             font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
 
         table{
-            width: 500px;
+            width: 400px;
+            position: relative;
+            margin: auto;
+
         }
 
-        td<td{
+        th,td{
             border: 1px solid black;
             padding: 10px;
 
@@ -23,29 +28,53 @@
             background-color: gray;
             color: white;
         }
+        thead tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+        tbody tr:nth-child(2n-1) {
+            background-color: rgb(0, 0, 0);
+            color: white;
+    }
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
     <h1>use tabelas grandes </h1>
 
     <table>
+
+        <caption>
+            populaçao das unidades federativas
+        </caption>
         <thead>
             <tr>
-                <td>estado<td>
-                <td>populaçao<td>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 50px;">populaçao</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>sao paulo<td>
-                <td>45 919 049<td class="numero">
+                <td>sao paulo</td>
+                <td>45 919 049</td class="numero">
             </tr>
             <tr>
-                <td>minas gerais<td>
+                <td>minas gerais</td>
                 <td>21 168 79</td class="numero">
             </tr>
             <tr>
-                <td>rio de janeiro<td>
+                <td>rio de janeiro</td>
                 <td>17 264 943</td class="numero">
             </tr>
             <tr>
@@ -66,7 +95,11 @@
             </tr>
             <tr>
                 <td>ceára</td>
-                <td>pará</td class="numero" >
+                <td>8 791 688</td class="numero" >
+            </tr>
+            <tr>
+                <td>pará</td>
+                <td>8 116 132</td class="numero" >
             </tr>
             <tr>
                 <td>santa catarina</td>
@@ -143,10 +176,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>total de habitantes<td>
-                <td>0000</td>
+                <th scope="row">total de habitantes</th>
+                <td>210.147.125</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto at laudantium sint cupiditate et recusandae natus dolor facere aperiam dolorum voluptate, id nam ut inventore cum iusto modi enim officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit, sequi incidunt officia similique dolore molestias maxime sint quis placeat sed delectus nesciunt commodi dolorem corrupti laborum sit, cupiditate quibusdam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio veniam molestias explicabo, quos omnis dicta amet deleniti! Blanditiis fuga, tempora hic totam quas dignissimos! Quo eligendi nam harum laudantium.</p> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto at laudantium sint cupiditate et recusandae natus dolor facere aperiam dolorum voluptate, id nam ut inventore cum iusto modi enim officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit, sequi incidunt officia similique dolore molestias maxime sint quis placeat sed delectus nesciunt commodi dolorem corrupti laborum sit, cupiditate quibusdam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio veniam molestias explicabo, quos omnis dicta amet deleniti! Blanditiis fuga, tempora hic totam quas dignissimos! Quo eligendi nam harum laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto at laudantium sint cupiditate et recusandae natus dolor facere aperiam dolorum voluptate, id nam ut inventore cum iusto modi enim officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit, sequi incidunt officia similique dolore molestias maxime sint quis placeat sed delectus nesciunt commodi dolorem corrupti laborum sit, cupiditate quibusdam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio veniam molestias explicabo, quos omnis dicta amet deleniti! Blanditiis fuga, tempora hic totam quas dignissimos! Quo eligendi nam harum laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto at laudantium sint cupiditate et recusandae natus dolor facere aperiam dolorum voluptate, id nam ut inventore cum iusto modi enim officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit, sequi incidunt officia similique dolore molestias maxime sint quis placeat sed delectus nesciunt commodi dolorem corrupti laborum sit, cupiditate quibusdam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio veniam molestias explicabo, quos omnis dicta amet deleniti! Blanditiis fuga, tempora hic totam quas dignissimos! Quo eligendi nam harum laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto at laudantium sint cupiditate et recusandae natus dolor facere aperiam dolorum voluptate, id nam ut inventore cum iusto modi enim officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit, sequi incidunt officia similique dolore molestias maxime sint quis placeat sed delectus nesciunt commodi dolorem corrupti laborum sit, cupiditate quibusdam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio veniam molestias explicabo, quos omnis dicta amet deleniti! Blanditiis fuga, tempora hic totam quas dignissimos! Quo eligendi nam harum laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto at laudantium sint cupiditate et recusandae natus dolor facere aperiam dolorum voluptate, id nam ut inventore cum iusto modi enim officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit, sequi incidunt officia similique dolore molestias maxime sint quis placeat sed delectus nesciunt commodi dolorem corrupti laborum sit, cupiditate quibusdam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio veniam molestias explicabo, quos omnis dicta amet deleniti! Blanditiis fuga, tempora hic totam quas dignissimos! Quo eligendi nam harum laudantium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto at laudantium sint cupiditate et recusandae natus dolor facere aperiam dolorum voluptate, id nam ut inventore cum iusto modi enim officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit, sequi incidunt officia similique dolore molestias maxime sint quis placeat sed delectus nesciunt commodi dolorem corrupti laborum sit, cupiditate quibusdam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio veniam molestias explicabo, quos omnis dicta amet deleniti! Blanditiis fuga, tempora hic totam quas dignissimos! Quo eligendi nam harum laudantium.</p>    
 </body>
 </html>
