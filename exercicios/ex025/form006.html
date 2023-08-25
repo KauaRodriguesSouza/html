@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    
+    <h1>exemplo de formulario</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <!-- esse faz uma barra de satidfaçao para o usuario -->
+        <p>
+            <label for="inivel">nivel de satisfaçao</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+        </p>
+
+        
+        <!-- esse aparece uma caixa para o usuario escolher uma cor -->
+        <p>
+            <label for="icor">cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        
+
+        <!-- esse serve para o usuario mandar um arquivo de uma foto
+          -->
+        <p>
+            <label for="ifoto">foto</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset"  value="deletar">
+        </p>
+
+    </form>
+
+</body>
+</html>
