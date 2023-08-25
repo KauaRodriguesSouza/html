@@ -11,14 +11,21 @@
 
     <form action="cadastro.php" method="get" autocomplete="on">
 
-        <p>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" required autocomplete="email"> 
-        </p>
-        <p>
-            <label for="itel">telefone</label>
-            <input type="number" name="tel" id="itel" autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$" required>
-        </p>
+        <fieldset>
+            <legend>dados pessuais</legend>
+            <p>
+                <label for="inome">nome</label>
+                <input type="text" name="name"  id="iname" required minlength="5" maxlength="30" placeholder="digite seu nome">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="digite seu e-mail">
+            </p>
+            <p>
+                <label for="itel">telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="xxxx-xxxxx">
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="enviar">
             <input type="reset" value="limpar">

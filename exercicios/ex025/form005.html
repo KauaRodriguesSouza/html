@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+
+    <form action="cadastro.php">
+
+        <fieldset>
+            <legend>sexo</legend>
+
+            <input type="radio" name="sexo" id="imasc" value="masculino"> <label for="imasc">maculino</label> <br>
+
+            <input type="radio" name="sexo" id="ifem" value="feminino"> <label for="ifem">feminino</label>
+             <!--sempre dar o mesmo name para os dois do type raido pq senao a bolinha fica marcada nas duas caixas -->
+        </fieldset>
+
+        <fieldset>
+            <legend>esporte favorito</legend>
+
+            <input type="checkbox" name="efut" id="iefut"> <label for="iefut"> futebol</label> <br>
+
+            <input type="checkbox" name="ebasq" id="iebasq"><label for="iebasq"> baquete</label> <br>
+
+            <input type="checkbox" name="enat" id="ienat"><label for="ienat"> natação</label> <br>
+
+            <input type="checkbox" name="eteni" id="ieteni"><label for="ieteni"> tenis</label>
+
+        </fieldset>
+        <!-- fieldset serve para fazer uma bordar entre o formulario -->
+        <!-- já o legend seve para dar um nome para o formulario entre as linhas do fieldset -->
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="deletar">
+        </p>
+    </form>
+</body>
+</html>
