@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5;
+    line-height: 4;
+}
+
+menu{
+    display: none;
+}
+article ::after{
+    content: 'esse artigo foi feito por kaua';
+}
+article{
+    width: 100%;
+}
