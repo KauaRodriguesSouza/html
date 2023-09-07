@@ -33,14 +33,17 @@ menu{
     display: none;
     
 }
-menu ul a{
+menu ul li a{
     display: block;
     text-decoration: none;
     padding: 5px;
     color: white;
     font-size: 20px;
-    border-top: 1px solid white;
     
+    
+}
+menu ul li{
+    border-top: 1px solid white;
 }
 
 menu ul a:hover{
@@ -52,6 +55,11 @@ main{
     background-color: white;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 p{
